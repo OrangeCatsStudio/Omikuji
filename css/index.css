@@ -1,0 +1,85 @@
+@charset "UTF-8";
+
+@font-face {
+	font-family: 'AcKaisho';
+	src: 
+        url(..//font_ackaisyo//ackaisyo.ttf) format("truetype");
+}
+
+body{
+    font-family: "AcKaisho";
+    font-size: 15px;
+    background: white;
+    backdrop-filter: blur(6px);
+    
+}
+a{
+    text-decoration: none;
+    color: #333;
+    backdrop-filter: blur(6px);
+}
+h1{
+    text-decoration: none;
+    color: #333;
+    backdrop-filter: blur(6px);
+    font-size: 40px;
+}
+h2{
+    text-decoration: none;
+    color: #333;
+    backdrop-filter: blur(6px);
+    font-size: 30px;
+}
+h3{
+    text-decoration: none;
+    color: #333;
+    backdrop-filter: blur(6px);
+    font-size: 20px;
+}
+.omikuji_b{
+    text-align: center;
+    font-size:35px;
+    background: #fff674;
+    border:rgb(255, 168, 68) solid 6px;
+    filter:blur(6px);
+    filter:drop-shadow(0 0 0.30em rgba(0, 0, 0, 0.8));
+    border-radius: 5%;
+    margin: 25px auto;
+    inline-size: fit-content;
+}
+.container{
+    width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.container img{
+    margin:auto;
+    display: block;
+}
+.title{
+    margin-top:25px;
+    margin-bottom: 25px;
+    border-bottom: rgba(0, 0, 0, 1.0) solid 5px;
+}
+.title h1{
+    font-size: 70px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.result{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 50px
+}
+.footer{
+    margin-top: 40px;
+}
+.copy{
+    justify-content: center;
+    text-align: center;
+    background: #6d6d6d;
+    color:#fff;
+    font-size: 12px;
+    padding: 7px 0 3px;
+}

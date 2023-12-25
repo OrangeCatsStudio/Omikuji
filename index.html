@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>おみくじ</title>
+        <meta name="description" content="新年の運勢を占うおみくじを引きましょう！">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/index.css">
+    </head>
+    <body>
+        <script type="text/javascript">
+            function onButtonPushed(){
+                omikujis = ["大吉","中吉","小吉","吉","末吉","凶","大凶"]
+                omikuji_n = Math.floor(Math.random()*omikujis.length)
+                console.log(omikujis[omikuji_n])
+                document.getElementById("result").textContent = omikujis[omikuji_n]
+                document.getElementById("omikuji_img").src = "./omikuji/"+String(omikuji_n)+".png"
+            }
+        </script>
+        <div class="container">
+            <div class="title">
+                <h3>今年のあなたの運勢を占う！</h3>
+                <h1>おみくじ</h1>
+            </div>
+            <h2>↓ 今年のあなたの運勢は！？ ↓</h2>
+            <h1 class="result" id="result">...</h1>
+            <img class="result_img" src="./omikuji/-.png" id="omikuji_img"></img>  
+        </div>
+        <div class="omikuji_b">
+            <button onclick=onButtonPushed()>おみくじを引く</button>
+        </div>
+        <footer class="footer">
+            <div class="copy">
+                &copy;2023 情報科学研究同好会
+            </div>
+        </footer>
+    </body>
+
+</html>
